@@ -1,0 +1,95 @@
+/* Container styling */
+.profileContainer {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  border: 2px solid #333;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* User information section */
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Avatar styling */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #333;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+/* Name styling */
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+/* Tag styling */
+.tag {
+  color: #666;
+  margin: 5px;
+}
+
+/* Location styling */
+.location {
+  color: #666;
+  margin: 5px;
+}
+
+/* Statistics list */
+.statsList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Individual statistic item */
+.statItem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Label for each statistic */
+.statLabel {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Value for each statistic */
+.statValue {
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Add interesting elements below */
+
+/* Add glow effect to avatar on hover */
+.avatar:hover {
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.8);
+}
+
+/* Add heartbeat animation to statistics */
+.statValue {
+  animation: heartbeat 1s infinite alternate;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

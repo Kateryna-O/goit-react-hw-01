@@ -1,0 +1,51 @@
+/* Основний контейнер для кожного елемента друзів */
+.friendListItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.3s; /* Плавний перехід для hover */
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  border: 2px solid #333;
+  width: 150px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover ефект */
+.friendListItem:hover {
+  background-color: #989898ad; /* Змінюємо фон при наведенні курсора */
+}
+
+/* Стилі для аватарки */
+.img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/* Стилі для імені друга */
+.friendName {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Стилі для статусу онлайн/офлайн */
+.friendStatus {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Стилі для статусу "Online" */
+.friendStatus.online {
+  color: green;
+}
+
+/* Стилі для статусу "Offline" */
+.friendStatus.offline {
+  color: red;
+}
